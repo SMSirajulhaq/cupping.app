@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www.sirajulhaq.in$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.cuppinh.app$
+  RewriteRule ^(.*)$ http://cupping.app/$1 [R=301,L]
+</IfModule>
